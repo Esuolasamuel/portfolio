@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0a0a0a;
+  --color-secondary: #111111;
+  --color-card: #1a1a1a;
+  --color-accent: #e8ff47;
+
+  --font-display: 'ClashDisplay', 'ClashDisplay-Variable', sans-serif;
+  --font-body: 'GeneralSans', 'GeneralSans-Variable', sans-serif;
+  --font-sans: var(--font-body);
+
+  --duration-fast: 200ms;
+  --duration-base: 400ms;
+  --duration-slow: 600ms;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --z-preloader: 1000;
+  --z-sticky: 200;
+
+  --animate-marquee: marquee 10s linear infinite;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-33.333%); }
+  }
+}
