@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const stats = [
-  { label: "Project Completed", value: "4" },
+  { label: "Project Completed", value: "3" },
   { label: "Total Client", value: "2+" },
 ];
 

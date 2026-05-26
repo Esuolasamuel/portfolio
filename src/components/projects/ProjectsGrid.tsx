@@ -37,15 +37,6 @@ const allProjects = [
     stack: ["Next.JS", "Tailwind CSS", "Paystack", "Nodemailer"],
     image: "/Sam'sStore.PNG",
   },
-  {
-    id: "04",
-    title: "Portfolio",
-    description: "Personal Portfolio website to showcase my projects, blogs and connect with me",
-    liveUrl: "",
-    codeUrl: null,
-    stack: ["Next.JS", "Tailwind CSS", "Typescript"],
-    image: "https://res.cloudinary.com/dgtc1iood/image/upload/v1766907340/8c288a67b8bfb8d9a629ea07fe3663383bb89b66_buoski.jpg",
-  },
 ];
 
 const ITEMS_PER_PAGE = 4;
