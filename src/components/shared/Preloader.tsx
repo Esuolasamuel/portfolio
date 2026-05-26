@@ -57,31 +57,27 @@ export default function Preloader() {
           variants={preloaderVariants}
           initial="initial"
           exit="exit"
-          className="fixed inset-0 z-1000 w-full flex flex-row items-center justify-center p-10 lg:p-16 bg-primary"
+          className="fixed inset-0 z-1000 flex items-center justify-between p-10 lg:p-16 bg-primary"
         >
-          {/* Logo */}
-          <div className="flex w-full items-start">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: showLogo ? 1 : 0 }}
-              transition={{ duration: 0.3 }}
-              className="text-white font-display font-bold text-xl md:text-2xl tracking-tight"
-            >
-              SamuelDev
-            </motion.div>
-          </div>
+          {/* Logo - Left */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: showLogo ? 1 : 0 }}
+            transition={{ duration: 0.3 }}
+            className="text-white font-display font-bold text-xl md:text-2xl tracking-tight"
+          >
+            SamuelDev
+          </motion.div>
 
-          {/* Counter */}
-          <div className="flex w-full items-end justify-start sm:justify-center lg:justify-start">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              className="text-white font-display font-black text-[clamp(60px,8vw,100px)] leading-none tracking-tight"
-            >
-              {progress}%
-            </motion.div>
-          </div>
+          {/* Counter - Right */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="text-white font-display font-black text-[clamp(60px,8vw,100px)] leading-none tracking-tight"
+          >
+            {progress}%
+          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>

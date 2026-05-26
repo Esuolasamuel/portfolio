@@ -4,7 +4,7 @@ import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
 
 export const metadata: Metadata = {
-  title: "PreshDev | Portfolio",
+  title: "Portfolio | SamuelDev",
   description: "Frontend Developer, Content Creator, Technical Writer",
 };
 

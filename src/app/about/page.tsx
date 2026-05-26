@@ -6,8 +6,8 @@ import AboutProfile from "@/components/about/AboutProfile";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About | PreshDev",
-  description: "Learn more about Precious Egwuenu — Frontend Developer, Content Creator, and Technical Writer based in Lagos, Nigeria.",
+  title: "About | SamuelDev",
+  description: "Learn more about Samuel Okonkwo — Frontend Developer, Content Creator, and Technical Writer based in Lagos, Nigeria.",
 };
 
 export default function AboutPage() {

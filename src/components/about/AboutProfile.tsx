@@ -33,9 +33,9 @@ export default function AboutProfile() {
               className="object-contain w-full h-full"
             />
             {/* Fallback overlay if no image */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            {/* <div className="absolute inset-0 flex items-center justify-center">
               <span className="text-white/40 font-body text-sm">Profile Photo</span>
-            </div>
+            </div> */}
           </div>
 
           {/* Text Content */}

@@ -6,8 +6,8 @@ import ProjectsGrid from "@/components/projects/ProjectsGrid";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Featured Projects | PreshDev",
-  description: "Explore the web development projects built by Precious Egwuenu — spanning e-commerce, fintech, healthcare, and more.",
+  title: "Featured Projects | SamuelDev",
+  description: "Explore the web development projects built by Samuel Esuola — spanning e-commerce, fintech, healthcare, and more.",
 };
 
 export default function ProjectsPage() {

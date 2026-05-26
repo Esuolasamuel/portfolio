@@ -25,7 +25,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative w-full min-h-screen pt-9 pb-9 flex items-center justify-center overflow-hidden">
+    <section className="relative w-full min-h-screen pt-14 pb-9 flex items-center justify-center overflow-hidden">
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-primary opacity-80" />

@@ -7,13 +7,13 @@ export default function ProjectsHero() {
     <section className="relative w-full min-h-[60vh] flex flex-col items-start justify-end pb-24 pt-[232px] overflow-hidden">
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
-        <Image
+        {/* <Image
           src="https://res.cloudinary.com/dgtc1iood/image/upload/v1766907340/8c288a67b8bfb8d9a629ea07fe3663383bb89b66_buoski.jpg"
           alt="Projects Background"
           fill
           className="object-cover"
           priority
-        />
+        /> */}
         <div className="absolute inset-0 bg-primary opacity-80" />
       </div>
 
