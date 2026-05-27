@@ -58,8 +58,8 @@ export async function sendContactEmail(
     },
   });
 
-  // 3. Compose & send
   try {
+    // 3. Send notification to portfolio owner
     await transporter.sendMail({
       from: `"${name}" <${process.env.SMTP_USER}>`,
       replyTo: email,
@@ -84,6 +84,22 @@ export async function sendContactEmail(
             </tr>
           </table>
           <div style="margin-top: 16px; padding: 16px; background: #f4f4f4; border-radius: 8px; white-space: pre-wrap;">${message}</div>
+        </div>
+      `,
+    });
+
+    // 4. Send auto-response to client
+    await transporter.sendMail({
+      from: `"Samuel Esuola" <${process.env.SMTP_USER}>`,
+      to: email,
+      subject: "Thank you for your message",
+      text: `Hi ${name},\n\nThank you for reaching out through my portfolio! I've received your message and will get back to you as soon as possible.\n\nBest regards,\nSamuel Esuola`,
+      html: `
+        <div style="font-family: sans-serif; max-width: 600px;">
+          <h2 style="color: #111;">Thank you for your message!</h2>
+          <p>Hi ${name},</p>
+          <p>Thank you for reaching out through my portfolio! I've received your message and will get back to you as soon as possible.</p>
+          <p>Best regards,<br>Samuel Esuola</p>
         </div>
       `,
     });
